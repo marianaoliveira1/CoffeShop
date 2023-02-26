@@ -1,3 +1,4 @@
+import 'package:coffeshop/widgets/home_bottom_bar.dart';
 import 'package:coffeshop/widgets/items_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -143,6 +144,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
       ),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }
