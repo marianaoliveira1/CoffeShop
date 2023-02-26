@@ -1,3 +1,4 @@
+import 'package:coffeshop/widgets/items_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -119,25 +120,25 @@ class _HomeScreenState extends State<HomeScreen>
                       text: "Hot Coffe",
                     ),
                     Tab(
-                      text: "Hot Coffe",
+                      text: "Cold Coffe",
                     ),
                     Tab(
-                      text: "Hot Coffe",
+                      text: "Cappuccino",
                     ),
                     Tab(
-                      text: "Hot Coffe",
+                      text: "Americano",
                     ),
                   ]),
               SizedBox(
                 height: 10,
               ),
-              // Center(
-              //   child: [
-              //     Container(
-
-              //     )
-              //   ],
-              // )
+              Center(
+                  child: [
+                ItemsWidget(),
+                ItemsWidget(),
+                ItemsWidget(),
+                ItemsWidget(),
+              ][_tabController.index])
             ],
           ),
         ),
